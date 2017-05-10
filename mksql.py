@@ -9,10 +9,12 @@ CUST_COUNT=10000
 CUST_NAME="CUSTOMER"
 
 custkey = [ "CUST_{0}".format(i) for i in range(0,CUST_COUNT)]
-custattr1 = [ "CUST_A1_{0}".format(i) for i in range(0,10)]
-custattr2 = [ "CUST_A2_{0}".format(i) for i in range(0,100)]
-tran1attr1 = [ "TRAN1_A1_{0}".format(i) for i in range(0,10)]
-trab1attr2 = [ "TRAN1_A2_{0}".format(i) for i in range(0,100)]
+custattr1 = [ "CUST_XX_A1_{0}".format(i) for i in range(0,10)]
+custattr2 = [ "CUST_XX_A2_{0}".format(i) for i in range(0,100)]
+tran1attr1 = [ "TRAN1_XX_A1_{0}".format(i) for i in range(0,10)]
+tran1attr2 = [ "TRAN1_XX_A2_{0}".format(i) for i in range(0,100)]
+tran2attr1 = [ "TRAN2_XX_A1_{0}".format(i) for i in range(0,10)]
+tran2attr2 = [ "TRAN2_XX_A2_{0}".format(i) for i in range(0,100)]
 
 custcols = ["CUSTID"] + ["CUSTATTR{0}".format(i) for i in range(1,50)]
 t1cols = ["TRAN1ID"] + ["TRAN1ATTR{0}".format(i) for i in range(1,50)]
